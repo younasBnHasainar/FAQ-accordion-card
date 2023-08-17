@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+}
+html {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.container {
+  /* width: 375px; */
+  margin: auto;
+  padding: 70px 10px;
+  background: linear-gradient(
+    180deg,
+    hsl(273, 75%, 66%) 30%,
+    hsl(240, 73%, 65%)
+  );
+}
+.sub-container {
+  width: 85%;
+  margin: auto;
+
+  padding: min(30%, 60px) 15px min(20%, 50px) 15px;
+
+  background-color: white;
+  position: relative;
+}
+.sub-container .icon {
+  scale: 0.4;
+  position: absolute;
+  top: -200px;
+  right: -80px;
+}
+.sub-container h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (min-width: 792px) {
+  .container {
+    width: 100%;
+  }
+  .sub-container {
+    width: auto;
+    margin: 10% auto;
+    width: 60%;
+    display: flex;
+  }
+  .sub-container .icon {
+    width: 50%;
+    scale: 0.6;
+    position: relative;
+    left: -7%;
+    top: 3%;
+  }
+  .faq-container {
+    width: 50%;
+  }
+}
