@@ -12,33 +12,131 @@ html {
     hsl(273, 75%, 66%) 30%,
     hsl(240, 73%, 65%)
   );
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
 .sub-container {
-  background-color: yellow;
+  background-color: white;
   width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
+  border-radius: 30px;
+  /* padding-bottom: 10%; */
 }
 .sub-container .svg-container {
-  height: 30%;
+  /* height: 30%; */
 
-  background-color: aqua;
+  /* background-color: aqua; */
 }
-.sub-container .icon {
-  background-color: brown;
-  scale: 70%;
+.svg-container .icon-mobile {
+  /* background-color: brown; */
+  /* width: 75%; */
   margin: 0;
   padding: 0;
   /* height: 10%; */
-  /* width: 60%; */
+  width: 65%;
 
   /* align-self: center; */
-  translate: 0% -50%;
+  translate: 26% -60%;
+}
+.sub-container .shadow-mobile {
+  width: 65%;
+  /* scale: 90%; */
+  translate: 26% -180%;
+}
+.sub-container .icon-desktop {
+  display: none;
+}
+.sub-container .shadow-desktop {
+  display: none;
+}
+.sub-container .box-desktop {
+  display: none;
 }
 .sub-container .faq-container {
-  margin-top: -15%;
-  height: 90%;
+  margin-top: min(-40%, -100px);
+  /* height: 90%; */
+}
+.faq-container h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 792px) {
+  .container {
+    /* z-index: 3; */
+    /* position: relative; */
+    opacity: 0.99;
+    z-index: 9999;
+  }
+  .sub-container {
+    /* position: relative; */
+    width: min(60%, 850px);
+    flex-direction: row;
+    /* z-index: 1; */
+  }
+  .svg-container {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    width: 50%;
+    /* background-color: brown; */
+    /* align-self: center; */
+    position: relative;
+    /* z-index: 1; */
+  }
+  .svg-container .icon-mobile {
+    display: none;
+  }
+  .svg-container .shadow-mobile {
+    display: none;
+  }
+
+  .svg-container .icon-desktop {
+    display: unset;
+    scale: 170%;
+    width: max(120px, 45%);
+    /* z-index: 1; */
+
+    /* translate: 10px 50%; */
+    /* z-index: 3; */
+    /* background-color: aqua; */
+  }
+  .svg-container .shadow-desktop {
+    display: unset;
+    scale: 380%;
+    width: 40%;
+    /* background-color: aqua; */
+    translate: -155%;
+
+    /* translate: -45px -220px; */
+    /* z-index: 2; */
+  }
+  .sub-container .box-desktop {
+    display: unset;
+    position: absolute;
+    top: 30%;
+    left: -25%;
+    width: max(120px, 45%);
+
+    scale: 90%;
+    /* z-index: 1; */
+  }
+  .test-icon {
+    /* width: 50%; */
+    scale: 150%;
+    background-color: brown;
+
+    position: absolute;
+    top: -33%;
+    right: -3%;
+  }
+  .sub-container .faq-container {
+    margin: unset;
+    background-color: aqua;
+    width: 50%;
+  }
 }
