@@ -19,31 +19,20 @@ html {
   background-color: white;
   width: 80%;
   margin: auto;
-  /* display: flex;
-  flex-direction: column; */
   border-radius: 30px;
-  /* padding-bottom: 10%; */
 }
 .sub-container .svg-container {
-  /* height: 30%; */
-
-  /* background-color: aqua; */
-}
-.svg-container .icon-mobile {
-  /* background-color: brown; */
-  /* width: 75%; */
+  /* height: 80px; */
   /* margin: 0;
   padding: 0; */
-  /* height: 10%; */
-  width: 65%;
-
-  /* align-self: center; */
-  translate: 26% -60%;
+}
+.svg-container .icon-mobile {
+  width: 60%;
+  translate: 30% -60%;
 }
 .sub-container .shadow-mobile {
   width: 65%;
-  /* scale: 90%; */
-  translate: 26% -180%;
+  translate: 25% -170%;
 }
 .sub-container .icon-desktop {
   display: none;
@@ -56,13 +45,48 @@ html {
 }
 .sub-container .faq-container {
   margin-top: min(-40%, -100px);
+  padding: 20px;
+  /* color: hsl(238, 29%, 16%); */
+  color: hsl(237, 12%, 33%);
+  font-size: 1.1rem;
 }
+
 .faq-container h1 {
   text-align: center;
   font-weight: 700;
   font-size: 2.5rem;
 }
+.faq-container .faq-sub {
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+  padding: 12px 0px;
+}
+.faq-container .faq-sub:last-of-type {
+  margin-bottom: 12px;
+}
+.faq-container .question-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-sub .question:hover {
+  font-weight: 700;
+}
+.question-block .arrow-image {
+  width: 10px;
+  height: 8px;
+}
+.faq-sub .answer {
+  margin-top: 7px;
 
+  color: hsl(240, 6%, 50%);
+  /* color: red; */
+}
+.inactive {
+  display: none;
+}
+.active {
+  display: block;
+}
 @media (min-width: 792px) {
   .container {
   }
@@ -71,16 +95,14 @@ html {
     width: min(70%, 800px);
     flex-direction: row;
     position: relative;
-    /* overflow: hidden; */
   }
   .svg-container {
+    /* height: auto; */
     display: flex;
 
     align-items: center;
     width: 50%;
-    /* background-color: brown; */
 
-    /* position: relative; */
     overflow: hidden;
   }
   .svg-container .icon-mobile {
@@ -94,14 +116,11 @@ html {
     display: unset;
     scale: 170%;
     width: max(120px, 45%);
-
-    /* background-color: aqua; */
   }
   .svg-container .shadow-desktop {
     display: unset;
     scale: 380%;
     width: 40%;
-    /* background-color: aqua; */
     translate: -155%;
   }
   .sub-container .box-desktop {
@@ -110,13 +129,11 @@ html {
     top: 40%;
     left: -9%;
     width: max(60px, 17%);
-
-    /* scale: 80%; */
   }
 
   .sub-container .faq-container {
     margin: unset;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 50%;
   }
 }
