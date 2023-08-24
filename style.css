@@ -21,11 +21,7 @@ html {
   margin: auto;
   border-radius: 30px;
 }
-.sub-container .svg-container {
-  /* height: 80px; */
-  /* margin: 0;
-  padding: 0; */
-}
+
 .svg-container .icon-mobile {
   width: 60%;
   translate: 30% -60%;
@@ -46,7 +42,7 @@ html {
 .sub-container .faq-container {
   margin-top: min(-40%, -100px);
   padding: 20px;
-  /* color: hsl(238, 29%, 16%); */
+
   color: hsl(237, 12%, 33%);
   font-size: 1.1rem;
 }
@@ -55,6 +51,7 @@ html {
   text-align: center;
   font-weight: 700;
   font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 .faq-container .faq-sub {
   border-bottom: 2px solid hsl(240, 5%, 91%);
@@ -70,6 +67,7 @@ html {
 }
 .faq-sub .question:hover {
   font-weight: 700;
+  cursor: pointer;
 }
 .question-block .arrow-image {
   width: 10px;
@@ -79,7 +77,6 @@ html {
   margin-top: 7px;
 
   color: hsl(240, 6%, 50%);
-  /* color: red; */
 }
 .inactive {
   display: none;
@@ -89,15 +86,16 @@ html {
 }
 @media (min-width: 792px) {
   .container {
+    height: 100vh;
   }
   .sub-container {
     display: flex;
     width: min(70%, 800px);
     flex-direction: row;
     position: relative;
+    height: 360px;
   }
   .svg-container {
-    /* height: auto; */
     display: flex;
 
     align-items: center;
@@ -133,7 +131,6 @@ html {
 
   .sub-container .faq-container {
     margin: unset;
-    /* background-color: aqua; */
     width: 50%;
   }
 }
